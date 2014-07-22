@@ -13,6 +13,7 @@
 		3512923F197E886E00569089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3512923D197E886E00569089 /* Main.storyboard */; };
 		35129241197E886E00569089 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35129240197E886E00569089 /* Images.xcassets */; };
 		3512924D197E886F00569089 /* Passing_Data_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3512924C197E886F00569089 /* Passing_Data_Challenge_SolutionTests.m */; };
+		35129258197E8A7700569089 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35129257197E8A7700569089 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		35129246197E886F00569089 /* Passing Data Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Passing Data Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3512924B197E886F00569089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3512924C197E886F00569089 /* Passing_Data_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passing_Data_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		35129256197E8A7700569089 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		35129257197E8A7700569089 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 			children = (
 				35129237197E886E00569089 /* AppDelegate.h */,
 				35129238197E886E00569089 /* AppDelegate.m */,
+				35129256197E8A7700569089 /* DetailViewController.h */,
+				35129257197E8A7700569089 /* DetailViewController.m */,
 				3512923A197E886E00569089 /* ViewController.h */,
 				3512923B197E886E00569089 /* ViewController.m */,
 				3512923D197E886E00569089 /* Main.storyboard */,
@@ -218,6 +223,7 @@
 				3512923C197E886E00569089 /* ViewController.m in Sources */,
 				35129239197E886E00569089 /* AppDelegate.m in Sources */,
 				35129236197E886E00569089 /* main.m in Sources */,
+				35129258197E8A7700569089 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

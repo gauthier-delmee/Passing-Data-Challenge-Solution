@@ -20,6 +20,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    //need to add code here so the lavel of the DetailViewController can be updated
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

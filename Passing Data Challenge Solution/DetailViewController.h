@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailViewController.h
 //  Passing Data Challenge Solution
 //
 //  Created by Gauthier Delmee on 22/07/2014.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UITextField *textField;
+
+
 
 @end
-
