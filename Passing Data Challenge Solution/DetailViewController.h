@@ -10,7 +10,8 @@
 
 @interface DetailViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *textToDisplayLabel;
 
-
+@property (strong, nonatomic) NSString *textToDisplay;
 
 @end

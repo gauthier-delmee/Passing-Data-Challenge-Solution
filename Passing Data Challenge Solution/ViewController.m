@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
             
@@ -22,6 +23,20 @@
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     //need to add code here so the lavel of the DetailViewController can be updated
+    if ([sender isKindOfClass:[UIButton class]]) {
+        if ([segue.destinationViewController isKindOfClass:[DetailViewController class]]) {
+            DetailViewController *nextViewController = segue.destinationViewController;
+            
+//            NSLog(@"%@", self.textField.text);
+            
+            NSString *textToDisplay = self.textField.text;
+            
+//            NSLog(@"%@", textToDisplay);
+            
+            nextViewController.textToDisplay = textToDisplay;
+        }
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

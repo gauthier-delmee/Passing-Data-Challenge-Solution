@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="125" y="129" width="70" height="30"/>
+                                    <rect key="frame" x="81" y="129" width="159" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="fYe-lj-r6i" kind="show" id="rfk-ON-6oz"/>
@@ -70,14 +70,39 @@
                         <viewControllerLayoutGuide type="bottom" id="gFg-Za-GVA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JvF-VK-Ceo">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jm-E0-EZp">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="99" width="117" height="38"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="7jm-E0-EZp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="7jm-E0-EZp"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="textToDisplayLabel" destination="7jm-E0-EZp" id="XyZ-9j-xMG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sI0-fr-bxx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942.5" y="415.5"/>
+            <point key="canvasLocation" x="1987.5" y="430.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L35-pZ-O8K">

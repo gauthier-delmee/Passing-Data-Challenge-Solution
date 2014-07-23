@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    NSLog(@"%@", self.textToDisplay);
+    self.textToDisplayLabel.text = self.textToDisplay;
 }
 
 - (void)didReceiveMemoryWarning
