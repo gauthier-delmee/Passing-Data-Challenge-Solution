@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Main Page-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="6Oe-Tk-ENb"/>
+                    <navigationItem key="navigationItem" title="Main Page" id="6Oe-Tk-ENb"/>
                     <connections>
                         <outlet property="textField" destination="haf-55-wa7" id="75l-tM-tvT"/>
                     </connections>
