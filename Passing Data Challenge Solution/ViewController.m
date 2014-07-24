@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.textField.delegate = self;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -34,6 +35,7 @@
 //            NSLog(@"%@", textToDisplay);
             
             nextViewController.textToDisplay = textToDisplay;
+            nextViewController.delegate = self;
         }
     }
     
@@ -42,6 +44,18 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - DetailViewController Delegate
+
+-(void)didUpdateText:(NSString *)text{
+    self.textField.text = text;
+}
+
+#pragma mark - UITextFiled Delegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [self.textField resignFirstResponder];
+    return YES;
 }
 
 @end

@@ -48,4 +48,8 @@
 }
 */
 
+- (IBAction)buttonPressed:(UIButton *)sender {
+    self.textToDisplayLabel.text = self.textField.text;
+    [self.delegate didUpdateText:self.textField.text];
+}
 @end

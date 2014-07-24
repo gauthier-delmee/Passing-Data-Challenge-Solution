@@ -73,13 +73,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="update information" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VzR-yO-h4h">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="145" width="280" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npi-yZ-DHs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="183" width="117" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="fYe-lj-r6i" eventType="touchUpInside" id="7lj-5P-yKt"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jm-E0-EZp">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="102" y="99" width="117" height="38"/>
+                                    <rect key="frame" x="102" y="81" width="117" height="38"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -87,16 +107,21 @@
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="VzR-yO-h4h"/>
+                                <exclude reference="Npi-yZ-DHs"/>
                                 <exclude reference="7jm-E0-EZp"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="VzR-yO-h4h"/>
+                                <include reference="Npi-yZ-DHs"/>
                                 <include reference="7jm-E0-EZp"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="textField" destination="VzR-yO-h4h" id="dSJ-RX-nf4"/>
                         <outlet property="textToDisplayLabel" destination="7jm-E0-EZp" id="XyZ-9j-xMG"/>
                     </connections>
                 </viewController>
